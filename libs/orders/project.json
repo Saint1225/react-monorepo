@@ -1,0 +1,19 @@
+{
+  "name": "orders",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/orders/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/vite:build",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/orders",
+        "main": "libs/orders/src/index.ts",
+        "tsConfig": "libs/orders/tsconfig.lib.json",
+        "assets": ["libs/orders/*.md"]
+      }
+    }
+  }
+}

@@ -25,7 +25,7 @@ export default defineConfig({
   // },
 
   build: {
-    outDir: '../../dist/apps/react-store-setup-practice',
+    outDir: './build/react-store-setup-practice',
     reportCompressedSize: true,
     commonjsOptions: {
       transformMixedEsModules: true,
